@@ -47,7 +47,7 @@
           liff.getProfile().then(profile => {
             document.getElementById("pictureUrl").src = profile.pictureUrl;
             document.getElementById("displayName").innerHTML = profile.displayName;
-            document.getElementById("email-input").inner = liff.getDecodedIDToken().email;
+            document.getElementById("email-input").value = liff.getDecodedIDToken().email;
           }).catch(err => console.error(err));
         }
         liff.init({ liffId: "1653928359-QJ4Plgq8" }, () => {
