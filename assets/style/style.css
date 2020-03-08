@@ -4,9 +4,45 @@ body{
 .card{
     box-shadow: 0 1px 6px 0 rgba(0,0,0,.06);
 }
+.card.coupon{
+    padding: 10px;
+    border-radius: 10px;
+}
+.card.coupon .card-body{
+    border: 1px dashed #999;
+    border-radius: 10px;
+    padding: 0 10px;
+}
 .profile-image{
     width: 80px;
     height: 80px;
+}
+.discount-qunatity{
+    font-weight: bold;
+    font-size: 42px;
+}
+.coupon-action{
+    align-self: flex-end;
+}
+.header-logo{
+    font-weight: bold;
+    font-size: 24px;   
+}
+.avatar{
+    background: #343a40;
+    border-radius: 50%;
+    color: rgba(255,255,255,.85);
+    display: inline-block;
+    vertical-align: middle;
+    width: 48px;
+    height: 48px;
+}
+.avatar img {
+    border-radius: 50%;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
 }
 .footer-bar{
     position: fixed;
@@ -17,4 +53,24 @@ body{
     bottom: 0;
     box-shadow: 0 1px 6px 0 rgba(0,0,0,.06);
     border-top: 1px solid #e9eaec;
+}
+.code-item{
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.06);
+}
+.barcode{
+    width: 300px;
+    height: 90px;
+}
+.qrcode{
+    width: 300px;
+    height: 300px;
+}
+.code-content{
+    background-color: #343a40;
+    width: 100%;
+    height: 100%;
 }
